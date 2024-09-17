@@ -236,10 +236,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const lottieFiles = document.querySelectorAll('.lottie-files');
 
     const lottiePaths = [
-        'Lottie Files/Research Driven.json',
-        'Lottie Files/Flow 2.json',
-        'Lottie Files/Optmize website.json',
-        'Lottie Files/Stand out.json',
+        'https://lottie.host/46a71eba-79c2-4135-a1f6-29e35a361382/48U1sxmVxA.json',
+        'https://lottie.host/e220c615-5ccc-4400-9867-d810e2abfb6d/xZy6ombyjz.json',
+        'https://lottie.host/5d2f2287-e157-437c-98ce-4336ec89b2d3/rypnq7sKYY.json',
+        'https://lottie.host/c838b44c-1462-4e04-abfa-575758aa2585/9u5Vdk7lAR.json',
     ];
 
     featureContents.forEach((content, index) => {
