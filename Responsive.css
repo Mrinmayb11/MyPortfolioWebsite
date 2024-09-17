@@ -11,14 +11,67 @@
 
 /* large Mobile Devices (Portrait and Landscape) */
 @media (max-width: 767px) {
+
+    #features-section, #testimonial-section{
+        overflow-x: hidden;
+    }
+    /* navbar */
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -15px;
+        height: 100vh;
+        top: 0;
+        background-color: rgba(12, 12, 12, 0.95);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        padding-top: 4em;
+    }
+
+    .nav-links.nav-active {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links.nav-active li {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    }
+
+    .cta-button-two {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
     :root{
         --h1-font-siz: 2.5rem;
         --h2-font-size: 2.5rem;
+
     }
     h1{
         font-size: 3rem;
     }
 
+    /* hero-section */
+    #hero-section{
+        height:90vh
+    }
+    #project-section .project:first-of-type{
+        margin-top: -80px;
+    }
 
     /* Project Section */
     .project{
@@ -31,7 +84,7 @@
 
     /* services-section */
     #services-section, #redesign-section{
-        margin: 10vh 0 20vh 0
+        margin: 5vh 0 10vh 0
     }
     .service-container{
         flex-direction: column;
@@ -39,13 +92,14 @@
     .service-wrapper ul{
         max-width: 100%;
     }
+
     /* redesign-section */
   .redesign-info{
     flex-direction: column;
-    gap: 2em;
   }
 
   /* feature-section */
+
   .features{
     padding: 0 4em;
   }
@@ -70,6 +124,9 @@
 #contact-section{
     margin: 0 5vw 5vh 5vw;
 }
+.contact-wrapper p{
+    color: var(--gray-h-two);
+  }
 
 }
 
@@ -79,14 +136,35 @@
         --h1-font-siz: 2rem;
         --h2-font-size: 2rem;
         --h3-font-size: 1.8rem;
+        --h4-font-size: 1.2rem;
     }
     h1{
         font-size: 2.2rem;
     }
+    .hero-content p:first-of-type{
+        font-size: 14px;
+        font-weight: 400;
+    }
     .sub-heading{
         width: 80%;
     }
+    /* services-section */
+    .service-wrapper h2{
+        margin-bottom: 1em !important;
+        text-align: center;
+        margin: auto;
+    }
 
+    .redesign-info{
+        text-align: center;
+        align-items: center;
+        margin-bottom:0;
+    }
+    .redesign-info h2{
+        margin-bottom: 1em !important;
+        text-align: center;
+        margin: auto;
+      }
     /* features-section */
     .center-h2{
         width: 80%;
@@ -94,6 +172,20 @@
     .features{
         padding: 0 2em;
     }
+    #features-section{
+        padding:6vh 0vw;
+      }
+
+      /* testimonials-section */
+      #testimonial-section{
+        padding: 6vh 5vw;
+      }
+
+      /* social-link */
+      .fa-brands, .fa-regular{
+        font-size:25px;
+      }
+
 }
 
 /* Tablet Devices */

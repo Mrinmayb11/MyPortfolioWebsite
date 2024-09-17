@@ -29,13 +29,21 @@
 <body id="body">
     <nav>
         <div class="logo">Mrinmay Biswas</div>
-        <ul>
+        <ul class="nav-links">
             <li><a href="#services-section">Services</a></li>
             <li><a href="#contact-section">Contact</a></li>
             <li><a href="#project-section">Projects</a></li>
             <li><a href="#fq-section">F&Q's</a></li>
         </ul>
-        <button class="cta-button-two"> <a href="mailto:mrinmaybiswas119@gmail.com"><span>Contact</span></a> </button>
+        <button class="cta-button-two"> 
+            <a href="mailto:mrinmaybiswas119@gmail.com"><span>Contact</span></a> 
+        </button>
+        <!-- Hamburger Menu -->
+        <button class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
     </nav>
     <section id="hero-section" class="side-padding">
         <div class="gradient-bg" style="z-index: 100;"  ></div>
@@ -47,7 +55,7 @@
             <p class="hidden">Standout from competitors on the saturated market</p>
             <h1 class="hidden">Modern Standout Website For Your Business</h1>
             <p class="sub-heading hidden" >Research driven strategic website that converts visitors into paying customers.</p>
-            <div class="hidden" class="hero-buttons">
+            <div class="hidden hero-buttons">
                 <button class="cta-button"><span>Request a Website</span></button>
                 <button class="cta-button-two"><span>View Works</span></button>
             </div>
@@ -191,22 +199,22 @@
         <div class="features">
             <div class="feature-content">
                 <h4 class="hidden">Research Driven</h4>
-                <p class="hidden">Learn about your client, competitors and pricing, and document important insights.</p>
+                <p class="hidden">I take the time to understand your business, your audience, and your competition to build a website that truly stands out.</p>
                 <div class="lottie-files"></div>
             </div>
             <div class="feature-content">
                 <h4 class="hidden">Highly Customized</h4>
-                <p class="hidden">Learn about your client, competitors and pricing, and document important insights.</p>
+                <p class="hidden">Every website is create is tailored to fit your unique needs and showcase your brand's personality.</p>
                 <div class="lottie-files"></div>
             </div>
             <div class="feature-content">
                 <h4 class="hidden">Optimized for Conversion</h4>
-                <p class="hidden">Learn about your client, competitors and pricing, and document important insights.</p>
+                <p class="hidden">Designs shouldn't not be only beautiful but also strategically crafted to turn visitors into customers.</p>
                 <div class="lottie-files"></div>
             </div>
             <div class="feature-content">
                 <h4 class="hidden">Standout from competitors</h4>
-                <p class="hidden">Learn about your client, competitors and pricing, and document important insights.</p>
+                <p class="hidden">I ensure your website captures attention and sets you apart in a crowded market.</p>
                 <div class="lottie-files"></div>
             </div>
         </div>
@@ -274,7 +282,8 @@
         <div class="contact-wrapper">
             <h2>Let me know if you wanna start working</h2>
             <p>If you have any questions feel free to reach out.</p>
-            <button class="cta-button"><span>Request a Website</span></button>
+            <a href="mailto:hello@mrinmaybiswas.com"><button class="cta-button"><span>hello@mrinmaybiswas.com</span></button></a>    
+        
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/mrinmay-biswas-51b554274/" target="_blank">
 
@@ -299,6 +308,14 @@
 <script>
 
 
+    // Toggle navigation on hamburger click
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        hamburger.classList.toggle('toggle');
+    });
 
     document.addEventListener( 'DOMContentLoaded', function() {
 

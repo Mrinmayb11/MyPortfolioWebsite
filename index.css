@@ -208,6 +208,40 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--gray-p);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger Animation */
+.hamburger.toggle .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.toggle .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.toggle .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* Change the text color on hover */
 nav ul li a:hover {
     color: #3C69FA; /* Match the underline color for a cohesive look */
@@ -358,7 +392,7 @@ body{
     display: inline-flex;
     background-color: #131313;
     border-radius: 10px;
-    gap: 1em;
+    gap: 3em;
     margin-bottom: 3em;
     width: 100%;
     max-width: 1200px;
@@ -393,6 +427,8 @@ body{
 }
 .project-info a{
     text-decoration: none;
+    font-weight: 500;
+    color: var(--gray-p);
 }
 .project img{
     height: auto;
@@ -656,6 +692,7 @@ body{
     color: var(--gray-p);
     line-height: 1.4;
     font-size: var(--para-font-size);
+    line-height: 1.6;
 }
 .feature-content {
     background-color: rgb(15, 15, 15);

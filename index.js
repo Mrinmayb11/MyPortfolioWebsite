@@ -284,3 +284,15 @@ const observer = new IntersectionObserver(entries => {
 
 const animateOnView = document.querySelectorAll('.hidden');
 animateOnView.forEach((el) => observer.observe(el));
+
+
+// // Toggle navigation on hamburger click
+// document.addEventListener('DOMContentLoaded', () => {
+//     const hamburger = document.getElementById('hamburger');
+//     const navLinks = document.querySelector('.nav-links');
+
+//     hamburger.addEventListener('click', () => {
+//         navLinks.classList.toggle('nav-active');
+//         hamburger.classList.toggle('toggle');
+//     });
+// });
