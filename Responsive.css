@@ -1,0 +1,107 @@
+/* =================== Responsive Styles =================== */
+
+/* ----------- Basic Resets and Box Sizing ----------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ----------- Mobile First Approach ----------- */
+
+/* large Mobile Devices (Portrait and Landscape) */
+@media (max-width: 767px) {
+    :root{
+        --h1-font-siz: 2.5rem;
+        --h2-font-size: 2.5rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+
+
+    /* Project Section */
+    .project{
+        flex-direction: column;
+    }
+    .project-info{
+        padding-left: 2em;
+        gap: 2.5em;
+    }
+
+    /* services-section */
+    #services-section, #redesign-section{
+        margin: 10vh 0 20vh 0
+    }
+    .service-container{
+        flex-direction: column;
+    }
+    .service-wrapper ul{
+        max-width: 100%;
+    }
+    /* redesign-section */
+  .redesign-info{
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  /* feature-section */
+  .features{
+    padding: 0 4em;
+  }
+
+/* testimonials-section */
+.testimonial-container{
+    flex-direction: column;
+}
+
+
+/* fq section */
+
+#fq-section{
+    flex-direction: column;
+    gap: 2em;
+}
+.fq-info p{
+    max-width: 100%;
+}
+
+/* contact-section */
+#contact-section{
+    margin: 0 5vw 5vh 5vw;
+}
+
+}
+
+/* small Mobile Devices (Portrait and Landscape) */
+@media (max-width: 500px) {
+    :root{
+        --h1-font-siz: 2rem;
+        --h2-font-size: 2rem;
+        --h3-font-size: 1.8rem;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    .sub-heading{
+        width: 80%;
+    }
+
+    /* features-section */
+    .center-h2{
+        width: 80%;
+    }
+    .features{
+        padding: 0 2em;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Desktop Devices */
+@media (min-width: 1024px) {
+
+}
