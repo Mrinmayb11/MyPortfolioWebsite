@@ -236,10 +236,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const lottieFiles = document.querySelectorAll('.lottie-files');
 
     const lottiePaths = [
-        'Resources/Lottie Files/Research Driven.json',
-        'Resources/Lottie Files/Flow 2.json',
-        'Resources/Lottie Files/Optmize website.json',
-        'Resources/Lottie Files/Stand out.json',
+        'Lottie Files/Research Driven.json',
+        'Lottie Files/Flow 2.json',
+        'Lottie Files/Optmize website.json',
+        'Lottie Files/Stand out.json',
     ];
 
     featureContents.forEach((content, index) => {
@@ -284,4 +284,3 @@ const observer = new IntersectionObserver(entries => {
 
 const animateOnView = document.querySelectorAll('.hidden');
 animateOnView.forEach((el) => observer.observe(el));
-
