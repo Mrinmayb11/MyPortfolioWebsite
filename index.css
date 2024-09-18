@@ -251,7 +251,6 @@ nav ul li a:hover {
 #hero-section{
     position: relative;
     height: 100vh;
-    width: 100vw;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -303,10 +302,6 @@ nav ul li a:hover {
     transition: height 1.8s, width 1.8s; /* Add transition for height and width */
 }
 
-/* .gradient-bg.show {
-    height: 150px; 
-    width: 60vw; 
-} */
 
 /* Hero Content */
 
@@ -318,6 +313,7 @@ nav ul li a:hover {
     align-items: center;
     gap: 2em;
     width: 800px;
+    min-width: 320px;
     text-align: center;
 }
 
@@ -348,10 +344,6 @@ nav ul li a:hover {
 .hero-buttons{
     display: flex;
     gap: 1.5em;
-}
-body{
-    width: 100vw;
-    height: fi;
 }
 
 /*--------------- Project-section --------------- */ 
@@ -714,6 +706,7 @@ body{
 
 #testimonial-section{
     padding: 10vh 5vw 20vh 5vw;
+    overflow: hidden;
     
 }
 
@@ -841,8 +834,6 @@ body{
     z-index: 3;
 }
 .contact-wrapper{
-    min-width: 320px;
-    max-width: 900px;
     text-align: center;
     position: relative;
     z-index: 2;

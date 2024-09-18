@@ -66,6 +66,10 @@
     }
 
     /* hero-section */
+
+    .hero-content{
+        width: 100%;
+    }
     #hero-section{
         height:90vh
     }
@@ -76,6 +80,7 @@
     /* Project Section */
     .project{
         flex-direction: column;
+        gap: 0em;
     }
     .project-info{
         padding-left: 2em;
@@ -96,6 +101,9 @@
     /* redesign-section */
   .redesign-info{
     flex-direction: column;
+  }
+  .dynamic-content{
+    display: none;
   }
 
   /* feature-section */
@@ -148,11 +156,15 @@
     .sub-heading{
         width: 80%;
     }
+    .project-info{
+        padding-left:1.5em
+    }
     /* services-section */
     .service-wrapper h2{
         margin-bottom: 1em !important;
         text-align: center;
         margin: auto;
+        width: auto;
     }
 
     .redesign-info{
@@ -165,6 +177,13 @@
         text-align: center;
         margin: auto;
       }
+
+
+
+      #redesign-section .gradient-bg{
+        max-width: 200px;
+        min-width: 100px;
+      }
     /* features-section */
     .center-h2{
         width: 80%;
@@ -174,8 +193,11 @@
     }
     #features-section{
         padding:6vh 0vw;
+        gap: 3em;
       }
-
+      .feature-content{
+        padding:1em;
+      }
       /* testimonials-section */
       #testimonial-section{
         padding: 6vh 5vw;
@@ -184,6 +206,10 @@
       /* social-link */
       .fa-brands, .fa-regular{
         font-size:25px;
+      }
+      #fq-section{
+        padding-top: 8vh;
+        padding-bottom: 8vh;
       }
 
 }
