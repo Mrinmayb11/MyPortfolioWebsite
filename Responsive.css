@@ -143,15 +143,19 @@
     :root{
         --h1-font-siz: 2rem;
         --h2-font-size: 2rem;
-        --h3-font-size: 1.8rem;
+        --h3-font-size: 1.5rem;
         --h4-font-size: 1.2rem;
     }
     h1{
         font-size: 2.2rem;
     }
+    #hero-section{
+        height: 80vh;
+    }
     .hero-content p:first-of-type{
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
+        padding: 5px 10px;
     }
     .sub-heading{
         width: 80%;
@@ -162,20 +166,15 @@
     /* services-section */
     .service-wrapper h2{
         margin-bottom: 1em !important;
-        text-align: center;
         margin: auto;
         width: auto;
     }
 
     .redesign-info{
-        text-align: center;
-        align-items: center;
         margin-bottom:0;
     }
     .redesign-info h2{
         margin-bottom: 1em !important;
-        text-align: center;
-        margin: auto;
       }
 
 
@@ -186,7 +185,10 @@
       }
     /* features-section */
     .center-h2{
-        width: 80%;
+        width: 100%;
+        text-align: left;
+        padding-left:1em;
+        padding-right:1em;
     }
     .features{
         padding: 0 2em;
