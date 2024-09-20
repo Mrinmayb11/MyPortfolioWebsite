@@ -643,13 +643,13 @@ nav ul li a:hover {
     position: relative;
 }
 .gradient-bg-two{
-    height: 60%;
+    height: 100%;
     width: 100vw;
     position: absolute;
     top: 0;
     z-index: 3;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -90%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -300%, rgba(0,0,0,1) 120%);
 }
 #features-section img, #testimonial-section img, #contact-section img{
     position: absolute;
@@ -736,7 +736,7 @@ nav ul li a:hover {
     bottom: 0 !important;
 }
 #testimonial-section .gradient-bg-two{
-    background: linear-gradient(180deg, rgba(0,0,0,1) 55%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 70%, rgba(0, 0, 0, 0) 120%);
 }
 
 /*--------------- f&q-section --------------- */ 
@@ -837,6 +837,8 @@ nav ul li a:hover {
     text-align: center;
     position: relative;
     z-index: 2;
+    min-width:320px;
+    max-width: 800px;
 }
 
 .contact-wrapper p{
