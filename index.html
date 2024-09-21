@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mrinmay Biswas</title>
+<!-- Preload the stylesheet -->
+<link rel="preload" as="style" href="index.css" onload="this.rel='stylesheet'">
+<noscript>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="Responsive.css ">
+</noscript>
+
+<!-- Repeat for Responsive.css -->
+<link rel="preload" as="style" href="Responsive.css" onload="this.rel='stylesheet'">
+<noscript>
+    <link rel="stylesheet" href="Responsive.css">
+</noscript>
     
-    <script defer src="index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script rel="preload" as="script" defer src="index.js"></script>
+    
     <script src="
     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
     "></script>
@@ -16,10 +25,6 @@
     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     " rel="stylesheet">
     
-    <!-- Locomotive scroll -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -48,7 +53,7 @@
     <section id="hero-section" class="side-padding">
         <div class="gradient-bg" style="z-index: 100;"  ></div>
          <div id="gradient-cover" >
-            <video autoplay muted loop id="grid-lines" src="Resources/Grid Lines.mp4"></video>
+            <video autoplay muted loop id="grid-lines" src="Resources/Grid Lines.webm" type="video/webm" fetchpriority="high"></video>
          </div>
          
         <div class="hero-content">
@@ -159,25 +164,26 @@
                     <div class="splide__list">
                         <div class="splide__slide">
                             <div class="image-comparison-slider">
-                                <img src="Resources/Before after images/Hero Redesign 01 After.png" alt="before">
+                                <img src="Resources/Before after images/Hero Redesign 01 After.webp" alt="before" fetchpriority="low">
                                 <div class="img-wrapper">
-                                    <img src="Resources/Before after images/Hero Redesign 01 Before.png" alt="after">
+                                    <img src="Resources/Before after images/Hero Redesign 01 Before.webp" alt="after" fetchpriority="low">
+
                                 </div>
                             </div>
                         </div>
                         <div class="splide__slide">
                             <div class="image-comparison-slider">
-                                <img src="Resources/Before after images/Hero Redesign 02 After.png" alt="before">
+                                <img src="Resources/Before after images/Hero Redesign 02 After.webp" alt="before" fetchpriority="low">
                                 <div class="img-wrapper">
-                                    <img src="Resources/Before after images/Hero Redesign 02 Before.png" alt="after">
+                                    <img src="Resources/Before after images/Hero Redesign 02 Before.webp" alt="after" fetchpriority="low">
                                 </div>
                             </div>
                         </div>
                         <div class="splide__slide">
                             <div class="image-comparison-slider">
-                                <img src="Resources/Before after images/Hero Redesign 03 After.png" alt="before">
+                                <img src="Resources/Before after images/Hero Redesign 03 After.webp" alt="before" fetchpriority="low">
                                 <div class="img-wrapper">
-                                    <img src="Resources/Before after images/Hero Redesign 03 Before.png" alt="after">
+                                    <img src="Resources/Before after images/Hero Redesign 03 Before.webp" alt="after" fetchpriority="low">
                                 </div>
                             </div>
                         </div>
@@ -278,9 +284,9 @@
     <section id="contact-section" class="side-padding">
         <div class="gradient-bg" ></div>
         <div class="gradient-bg-two"></div>
-        <img src="Resources/Grid Lines.svg" alt="grid-lines-effect">
+        <img src="Resources/Grid Lines.svg" alt="grid-lines-effect" fetchpriority="low">
         <div class="contact-wrapper">
-            <h2>    <h2>Interested in collaborating? I'd love to hear from you!</h2></h2>
+            <h2>    <h2>Interested In Collaborating? I'd Love to Hear From You!</h2></h2>
             <p>If you have any questions feel free to reach out.</p>
             <a href="mailto:hello@mrinmaybiswas.com"><button class="cta-button"><span>hello@mrinmaybiswas.com</span></button></a>    
         
@@ -304,27 +310,4 @@
 
     </section>
 </body>
-
-<script>
-
-
-    // Toggle navigation on hamburger click
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('nav-active');
-        hamburger.classList.toggle('toggle');
-    });
-
-    document.addEventListener( 'DOMContentLoaded', function() {
-
-      var splide = new Splide( '.splide',{
-        drag:false,
-        type:'loop',
-        speed: 1300, 
-      } );
-      splide.mount();
-    } );
-  </script>
 </html>

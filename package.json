@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "@splidejs/splide": "^4.1.4",
-    "smooth-scrollbar": "^8.8.4"
+    "@builder.io/partytown": "^0.10.2",
+    "@splidejs/splide": "^4.1.4"
   },
   "name": "my-website",
   "version": "1.0.0",

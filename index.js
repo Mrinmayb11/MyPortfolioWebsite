@@ -1,6 +1,23 @@
-// smooth scrollbar 
 
 
+   // Toggle navigation on hamburger click
+   const hamburger = document.getElementById('hamburger');
+   const navLinks = document.querySelector('.nav-links');
+
+   hamburger.addEventListener('click', () => {
+       navLinks.classList.toggle('nav-active');
+       hamburger.classList.toggle('toggle');
+   });
+
+   document.addEventListener( 'DOMContentLoaded', function() {
+
+     var splide = new Splide( '.splide',{
+       drag:false,
+       type:'loop',
+       speed: 1300, 
+     } );
+     splide.mount();
+   } );
 
 
 // video playing speed 
