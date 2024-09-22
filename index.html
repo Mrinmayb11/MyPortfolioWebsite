@@ -6,15 +6,15 @@
     <title>Mrinmay Biswas</title>
 
 <!-- Preload the stylesheet -->
-<link rel="stylesheet" href="index.css"  onload="this.media='all'">
+    <link rel="stylesheet" href="index.css" onload="this.media='all'">
+    <link rel="stylesheet" href="Responsive.css" onload="this.media='all'">
 
-<!-- Repeat for Responsive.css -->
-<link rel="stylesheet" href="Responsive.css" onload="this.media='all'">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     
-    <script rel="preload" as="script" defer src="index.js"></script>
-    
-    <script src="
+    <script defer src="
     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
     "></script>
     <link href="
@@ -24,7 +24,7 @@
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <body id="body">
@@ -36,9 +36,12 @@
             <li><a href="#project-section">Projects</a></li>
             <li><a href="#fq-section">F&Q's</a></li>
         </ul>
-        <button class="cta-button-two"> 
-            <a href="mailto:mrinmaybiswas119@gmail.com"><span>Contact</span></a> 
-        </button>
+        <a href="mailto:hello@mrinmaybiswas.com">
+            <button class="cta-button-two"> 
+                <span>Contact</span>
+            </button>
+        </a>
+
         <!-- Hamburger Menu -->
         <button class="hamburger" id="hamburger">
             <span class="bar"></span>
@@ -49,7 +52,7 @@
     <section id="hero-section" class="side-padding">
         <div class="gradient-bg" style="z-index: 100;"  ></div>
          <div id="gradient-cover" >
-            <video autoplay muted loop id="grid-lines" src="Resources/Grid Lines.webm" type="video/webm" fetchpriority="high"></video>
+            <video autoplay muted loop id="grid-lines" src="Resources/Grid Lines.webm" type="video/webm" loading="lazy" fetchpriority="high"></video>
          </div>
          
         <div class="hero-content">
@@ -64,7 +67,7 @@
     </section>
     <section id="project-section" class="side-padding">
         <div class="project">
-            <img src="Resources/Images/The Prexi (3).webp" alt="Project 1">
+            <img src="Resources/Images/The Prexi (3).webp" alt="Project 1" loading="lazy">
             <div class="project-info">
                 <div class="project-header">
                     <h2>MoonShine Golf</h2>
@@ -77,7 +80,7 @@
             </div>
         </div>
         <div class="project">
-            <img src="Resources/Images/eTrustScore (1).webp" alt="Project 2">
+            <img src="Resources/Images/eTrustScore (1).webp" alt="Project 2" loading="lazy">
             <div class="project-info">
                 <div class="project-header">
                     <h2>eTrustScore</h2>
@@ -91,7 +94,7 @@
             </div>
         </div>
         <div class="project">
-            <img src="Resources/Images/Alchemy-Interiors (4).webp" alt="Project 3">
+            <img src="Resources/Images/Alchemy-Interiors (4).webp" alt="Project 3" loading="lazy">
             <div class="project-info">
                 <div class="project-header">
                     <h2>Alchemy Interiors</h2>
@@ -104,7 +107,7 @@
             </div>
         </div>
         <div class="project">
-            <img src="Resources/Images/MoonShine Golf (1).webp" alt="Project 3">
+            <img src="Resources/Images/MoonShine Golf (1).webp" alt="Project 3" loading="lazy">
             <div class="project-info">
                 <div class="project-header">
                     <h2>Moonshine Golf</h2>
@@ -123,23 +126,23 @@
                 <ul>
                     <li class="hidden" data-content="Web Design Content">
                         Web Design
-                        <img src="Resources/Logo-icons/figma (1)-min.webp" alt="figma">
+                        <img src="Resources/Logo-icons/figma (1)-min.webp" alt="figma" loading="lazy">
                     </li>
                         <li class="hidden" data-content="Webflow Development Content">
                         Webflow Development
-                        <img src="Resources/Logo-icons/webflow-logo-min.webp" alt="webflow">
+                        <img src="Resources/Logo-icons/webflow-logo-min.webp" alt="webflow" loading="lazy">
                     </li>
                     <li class="hidden" data-content="Landing Pages Content">
                         Landing Pages
-                        <img src="Resources/Logo-icons/framer logo-min.webp" alt="framer & Webflow">
+                        <img src="Resources/Logo-icons/framer logo-min.webp" alt="framer & Webflow" loading="lazy">
                     </li>
                     <li class="hidden" data-content="Custom Website Content">
                         Custom Website
-                        <img src="Resources/Logo-icons/code-min.webp" alt="Custom code">
+                        <img src="Resources/Logo-icons/code-min.webp" alt="Custom code" loading="lazy">
                     </li>
                 </ul>
                 <div id="dynamic-content" class="dynamic-content">
-                    <img src="Resources/On hover images/custom website.webp" alt="">
+                    <img src="Resources/On hover images/custom website.webp" alt="" loading="lazy">
                 </div>
             </div>
 
@@ -160,26 +163,26 @@
                     <div class="splide__list">
                         <div class="splide__slide">
                             <div class="image-comparison-slider">
-                                <img src="Resources/Before after images/Hero Redesign 01 After.webp" alt="before" fetchpriority="low">
+                                <img src="Resources/Before after images/Hero Redesign 01 After.webp" alt="before" loading="lazy" fetchpriority="low">
                                 <div class="img-wrapper">
-                                    <img src="Resources/Before after images/Hero Redesign 01 Before.webp" alt="after" fetchpriority="low">
+                                    <img src="Resources/Before after images/Hero Redesign 01 Before.webp" alt="after" loading="lazy" fetchpriority="low">
 
                                 </div>
                             </div>
                         </div>
                         <div class="splide__slide">
                             <div class="image-comparison-slider">
-                                <img src="Resources/Before after images/Hero Redesign 02 After.webp" alt="before" fetchpriority="low">
+                                <img src="Resources/Before after images/Hero Redesign 02 After.webp" alt="before" loading="lazy" fetchpriority="low">
                                 <div class="img-wrapper">
-                                    <img src="Resources/Before after images/Hero Redesign 02 Before.webp" alt="after" fetchpriority="low">
+                                    <img src="Resources/Before after images/Hero Redesign 02 Before.webp" alt="after" loading="lazy" fetchpriority="low">
                                 </div>
                             </div>
                         </div>
                         <div class="splide__slide">
                             <div class="image-comparison-slider">
-                                <img src="Resources/Before after images/Hero Redesign 03 After.webp" alt="before" fetchpriority="low">
+                                <img src="Resources/Before after images/Hero Redesign 03 After.webp" alt="before" loading="lazy" fetchpriority="low">
                                 <div class="img-wrapper">
-                                    <img src="Resources/Before after images/Hero Redesign 03 Before.webp" alt="after" fetchpriority="low">
+                                    <img src="Resources/Before after images/Hero Redesign 03 Before.webp" alt="after" loading="lazy" fetchpriority="low">
                                 </div>
                             </div>
                         </div>
@@ -298,12 +301,13 @@
                 <a href="https://www.youtube.com/@mrinmayb11"  target="_blank">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href="mailto:mrinmaybiswas119@gmail.com"  target="_blank">
+                <a href="mailto:hello@mrinmaybiswas.com"  target="_blank">
                     <i class="fa-regular fa-envelope"></i>
                 </a>
             </div>
         </div>
 
     </section>
+    <script rel="preload" as="script" src="index.js"></script>
 </body>
 </html>
