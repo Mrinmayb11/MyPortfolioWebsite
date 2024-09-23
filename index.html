@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mrinmay Biswas</title>
 
-<!-- Preload the stylesheet -->
+    <!-- preload dynamic content -->
+    <link rel="preload" href="Resources/Images/MoonShine Golf (1).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/MoonShine Golf (2).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/MoonShine Golf (3).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/MoonShine Golf (4).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/eTrustScore (1).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/eTrustScore (2).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/eTrustScore (3).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/eTrustScore (4).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/Alchemy-Interiors (1).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/Alchemy-Interiors (2).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/Alchemy-Interiors (3).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/Alchemy-Interiors (4).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/The Prexi (1).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/The Prexi (2).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/The Prexi (3).webp" as="image" fetchpriority="high">
+    <link rel="preload" href="Resources/Images/The Prexi (4).webp" as="image" fetchpriority="high">
+    <!-- Fevicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Resources/Fevicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Resources/Fevicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Resources/Fevicon/favicon-16x16.png">
+    <link rel="manifest" href="Resources/Fevicon/site.webmanifest">
+
+    <!-- Preload the stylesheet -->
     <link rel="stylesheet" href="index.css" onload="this.media='all'">
     <link rel="stylesheet" href="Responsive.css" onload="this.media='all'">
 
@@ -50,7 +73,7 @@
         </button>
     </nav>
     <section id="hero-section" class="side-padding">
-        <div class="gradient-bg" style="z-index: 100;"  ></div>
+        <div class="gradient-bg" style="z-index: 100;"  ></div> 
          <div id="gradient-cover" >
             <video autoplay muted loop id="grid-lines" src="Resources/Grid Lines.webm" type="video/webm" loading="lazy" fetchpriority="high"></video>
          </div>
@@ -67,7 +90,7 @@
     </section>
     <section id="project-section" class="side-padding">
         <div class="project">
-            <img src="Resources/Images/The Prexi (3).webp" alt="Project 1" loading="lazy">
+            <img src="Resources/Images/The Prexi (3).webp" alt="Project 1" loading="lazy" fetchpriority="high">
             <div class="project-info">
                 <div class="project-header">
                     <h2>MoonShine Golf</h2>
@@ -80,7 +103,7 @@
             </div>
         </div>
         <div class="project">
-            <img src="Resources/Images/eTrustScore (1).webp" alt="Project 2" loading="lazy">
+            <img src="Resources/Images/eTrustScore (1).webp" alt="Project 2" loading="lazy" fetchpriority="high">
             <div class="project-info">
                 <div class="project-header">
                     <h2>eTrustScore</h2>
@@ -94,7 +117,7 @@
             </div>
         </div>
         <div class="project">
-            <img src="Resources/Images/Alchemy-Interiors (4).webp" alt="Project 3" loading="lazy">
+            <img src="Resources/Images/Alchemy-Interiors (4).webp" alt="Project 3" loading="lazy" fetchpriority="high">
             <div class="project-info">
                 <div class="project-header">
                     <h2>Alchemy Interiors</h2>
@@ -309,5 +332,32 @@
 
     </section>
     <script rel="preload" as="script" src="index.js"></script>
+    <script>
+           document.addEventListener('DOMContentLoaded', () => {
+       const images = [
+           'Resources/Images/MoonShine Golf (1).webp',
+           'Resources/Images/MoonShine Golf (2).webp',
+           'Resources/Images/MoonShine Golf (3).webp',
+           'Resources/Images/MoonShine Golf (4).webp',
+           'Resources/Images/The Prexi (1).webp',
+           'Resources/Images/The Prexi (2).webp',
+           'Resources/Images/The Prexi (3).webp',
+           'Resources/Images/The Prexi (4).webp',
+           'Resources/Images/eTrustScore (1).webp',
+           'Resources/Images/eTrustScore (2).webp',
+           'Resources/Images/eTrustScore (3).webp',
+           'Resources/Images/eTrustScore (4).webp',
+           'Resources/Images/Alchemy-Interiors (1).webp',
+           'Resources/Images/Alchemy-Interiors (2).webp',
+           'Resources/Images/Alchemy-Interiors (3).webp',
+           'Resources/Images/Alchemy-Interiors (4).webp',
+       ];
+
+       images.forEach(src => {
+           const img = new Image();
+           img.src = src;
+       });
+   });
+    </script>
 </body>
 </html>
