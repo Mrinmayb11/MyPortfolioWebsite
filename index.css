@@ -833,7 +833,7 @@ nav ul li a:hover {
     text-align: center;
     position: relative;
     z-index: 2;
-    min-width:320px;
+    min-width:300px;
     max-width: 800px;
 }
 
