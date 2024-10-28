@@ -39,18 +39,10 @@ const projectData = [
     },
     {
         images: [
-            'Resources/Images/eTrustScore (1).webp',
-            'Resources/Images/eTrustScore (2).webp',
-            'Resources/Images/eTrustScore (3).webp',
-            'Resources/Images/eTrustScore (4).webp'
-        ]
-    },
-    {
-        images: [
-            'Resources/Images/Alchemy-Interiors (4).webp',
-            'Resources/Images/Alchemy-Interiors (1).webp',
-            'Resources/Images/Alchemy-Interiors (2).webp',
-            'Resources/Images/Alchemy-Interiors (3).webp'
+            'Resources/Images/Podzter (1).webp',
+            'Resources/Images/Podzter (2).webp',
+            'Resources/Images/Podzter (3).webp',
+            'Resources/Images/Podzter (4).webp'
         ]
     },
     {
@@ -59,6 +51,15 @@ const projectData = [
             'Resources/Images/MoonShine Golf (2).webp',
             'Resources/Images/MoonShine Golf (3).webp',
             'Resources/Images/MoonShine Golf (4).webp'
+        ]
+       
+    },
+    {
+        images: [
+            'Resources/Images/eTrustScore (1).webp',
+            'Resources/Images/eTrustScore (2).webp',
+            'Resources/Images/eTrustScore (3).webp',
+            'Resources/Images/eTrustScore (4).webp'
         ]
     }
 ];
