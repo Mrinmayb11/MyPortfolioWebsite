@@ -636,6 +636,11 @@ nav ul li a:hover {
     padding: 7em 0 2em 0;
     position: relative;
 }
+.testimonial-highlight{
+    font-weight:600; font-size: 24px !important;
+    line-height:1.4 !important;
+    color: #fff !important;
+}
 .gradient-bg-two{
     height: 100%;
     width: 100vw;
