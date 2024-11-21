@@ -8,7 +8,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+section{
+    overflow-x: hidden !important;
+}
 /* style scrollbar */
 ::-webkit-scrollbar{
     width: 10px;
@@ -298,6 +300,9 @@ nav ul li a:hover {
     z-index: 1;
     bottom: -100px;
     transition: height 1.8s, width 1.8s; /* Add transition for height and width */
+    max-width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -436,6 +441,7 @@ nav ul li a:hover {
 
 #services-section, #redesign-section{
     margin: 18vh 0 25vh 0;
+    overflow-y: hidden !important;
 }
 
 .service-wrapper h2{
@@ -571,9 +577,6 @@ nav ul li a:hover {
     right: 0;
     height: 100%;
   }
-  /* .splide__track,.splide__list, .splide__slide, .splide__slider, .Splide{
-    width: 90vw;
-  } */
 
 .labels{
     position: absolute;
@@ -627,7 +630,7 @@ nav ul li a:hover {
 
 /*--------------- feature-section --------------- */ 
 
-#features-section, #testimonial-section{
+#testimonial-section{
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -650,23 +653,16 @@ nav ul li a:hover {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -300%, rgba(0,0,0,1) 120%);
 }
-#features-section img, #testimonial-section img, #contact-section img{
+#testimonial-section img, #contact-section img{
     position: absolute;
     z-index: -4;
     top: 0;
     width: 100%;
 }
-#features-section img, #testimonial-section img{
+#testimonial-section img{
     z-index: 2;
 }
-.features {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5em;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1em;
-}
+
 @media (max-width: 768px) {
     .features {
         grid-template-columns: 1fr;

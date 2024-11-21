@@ -139,6 +139,17 @@
     color: var(--gray-h-two);
   }
 
+    .testimonial {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.5em;
+    }
+    
+    .testimonial-container {
+        width: 100%;
+        padding: 0;
+    }
+
 }
 
 /* small Mobile Devices (Portrait and Landscape) */
