@@ -8,9 +8,6 @@
 html{
     scroll-behavior: smooth;
 }
-section{
-    overflow-x: hidden !important;
-}
 /* style scrollbar */
 ::-webkit-scrollbar{
     width: 10px;
@@ -441,8 +438,9 @@ nav ul li a:hover {
 
 #services-section, #redesign-section{
     margin: 18vh 0 25vh 0;
-    overflow-y: hidden !important;
 }
+
+
 
 .service-wrapper h2{
     color:var(--gray-h-two);
@@ -546,7 +544,7 @@ nav ul li a:hover {
 /* before after slider  */
 .image-comparison-slider {
     position: relative;
-    width: 88vw;
+    width: 89vw;
     height: auto;
     overflow: hidden;
     border-radius: 0.5rem;
@@ -555,7 +553,7 @@ nav ul li a:hover {
   }
   .image-comparison-slider img {
     display: block;
-    width: 88vw;
+    width: 89vw;
     height: auto;
     object-fit: cover;
     object-position: top;
@@ -618,13 +616,17 @@ nav ul li a:hover {
 
   /* splide slider */
 
-  .splide{
+.splide{
     position: relative;
+    z-index: 6;
+    width: 100%;
   }
 .splide__track{
     border-radius: 0.5em;
     box-shadow: 0 0 15px rgba(60, 105, 250, 0.5), 0 0 25px rgba(155, 75, 255, 0.5);
     transition: height 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    overflow: visible;
+    width: 100%;
 }
 
 

@@ -150,6 +150,55 @@
         padding: 0;
     }
 
+    #redesign-section {
+        width: 100%;
+        overflow: visible; /* Allow slider to be visible */
+        position: relative;
+    }
+
+    .splide {
+        width: 100%;
+        overflow: visible; /* Allow slider to be visible */
+        position: relative;
+    }
+
+    .splide__track {
+        width: 100%;
+        overflow: visible; /* Allow slider to be visible */
+        position: relative;
+    }
+
+    /* Keep the working width */
+    .image-comparison-slider {
+        width: 89vw !important;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .image-comparison-slider img {
+        width: 89vw !important;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Ensure handle and labels stay visible */
+    .handle {
+        position: absolute;
+        z-index: 10;
+    }
+
+    .labels {
+        position: absolute;
+        z-index: 9;
+    }
+
+    /* Center the slider container */
+    .splide__list {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 /* small Mobile Devices (Portrait and Landscape) */
